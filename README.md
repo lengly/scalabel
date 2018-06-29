@@ -17,6 +17,10 @@ Scalabel (pronounced "scalable") is a versatile and scalable tool that supports 
     ```
     mkdir ../data
     ```
+    Or, for Windows users:
+    ```
+    mkdir ..\data
+    ```
 3. Launch server. There are two options, either (i) to build
  with Docker or (ii) to build by yourself.
     1. Build and run a Docker image from the Dockerfile.
@@ -44,6 +48,10 @@ Scalabel (pronounced "scalable") is a versatile and scalable tool that supports 
         ```
         go build -i -o $GOPATH/bin/scalabel ./server/go
         ```
+        For Windows users, use
+        ```
+        go build -i -o %GOPATH%\bin\scalabel.exe .\server\go
+        ```
         
          Note that you may choose your own path for the server executable. We
         use $GOPATH/bin/scalabel as it conforms to golang best practice, 
@@ -55,6 +63,10 @@ Scalabel (pronounced "scalable") is a versatile and scalable tool that supports 
         5. Launch the server by running 
         ```
         $GOPATH/bin/scalabel --config app/config/default_config.yml
+        ```
+        For Windows users, run:
+        ```
+        %GOPATH%\bin\scalabel.exe --config app\config\default_config.yml
         ```
         
          If you used a different server path when compiling, make sure to use
