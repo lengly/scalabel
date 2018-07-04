@@ -46,7 +46,7 @@ you can open `http://localhost:8686` to create your annotation project.
 
 ## Create Project 
 
-The interface of creating a new project is show as follows. We use the video 
+The interface of creating a new project is shown as following. We use the video 
 bounding box annotation as an example.
 
 ![alt text](https://s3-us-west-2.amazonaws.com/scalabel-public/demo/screenshots/create_project_video.png)
