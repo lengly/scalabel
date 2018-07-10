@@ -712,7 +712,7 @@ func formValidation(w http.ResponseWriter, r *http.Request) bool {
 		return false
 	}
 
-	if r.FormValue("task_size") == "" {
+	if r.FormValue("item_type") != "video" && r.FormValue("task_size") == "" {
 		w.Write([]byte("Please specify a task size."))
 		return false
 	}
